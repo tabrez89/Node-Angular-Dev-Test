@@ -1,0 +1,23 @@
+<div class="well" ng-controller="MainCtrl">
+  <form role="form" name="flickrform" ng-submit="searchonFlickr(flickrform.$invalid)" ngEnter="searchonFlickr(flickrform.$invalid)">
+    
+     <div class="form-group" show-errors>
+                                                    <input class="form-control" type="text" name="tagvalue"  ng-model="inputModel.tagvalue" placeholder="Search tags comma seperated e.g bollywood, hollywood" required>
+                                                 </div>
+    <button type="submit" class="btn btn-primary" ng-click="searchonFlickr(flickrform.$invalid)">Submit</button>
+  </form>
+  <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Flickr</h1>
+            </div>
+
+            <div class="col-md-3" ng-repeat="flickrObject in flickrResponse">
+                <a class="thumbnail" href="{{flickrObject.media.b}}" target="_blank"> <!-- later on click popup to show big size image -->
+                    <img class="img-responsive" src="{{flickrObject.media.m}}" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
