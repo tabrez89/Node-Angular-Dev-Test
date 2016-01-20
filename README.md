@@ -1,6 +1,6 @@
 
 
-# ${projectname}
+# Node Flickr App
 
 
 
@@ -16,7 +16,7 @@ For Flickr Tag search
 ### Tools
 MEAN (no DB involved i.e Mongo),Grunt,Jasmine &RequireJS.
 
-Created with
+Author
 Tabrez Akhlaue  
 
-Nodeclipse is free open-source project that grows with your contributions.
+
