@@ -7,9 +7,11 @@ define(['app/app'],function(app){
   $scope.inputModel = {
         tagvalue :''  
     };
-   $scope.searchonFlickr = function(isValid){
+   $scope.searchonFlickr = function(invalid){
     /*To-Do Handle the validations*/
-    if(isValid == true){
+    if(invalid == true){
+      return;
+    }
     flickrutils.utils.showMask();
      $http({method: 'GET', url: '/api/flickr/getFlickr?tagvalue='+$scope.inputModel.tagvalue}).success(function(data){
       flickrutils.utils.hideMask();
@@ -18,7 +20,7 @@ define(['app/app'],function(app){
       flickrutils.utils.hideMask();
       noty({text: "Error at api side !",  timeout: 2000, type: 'error'});
      });
-   }
+
 };
    $scope.searchonFlickr(true);
  }]);
