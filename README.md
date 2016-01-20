@@ -17,6 +17,6 @@ For Flickr Tag search
 MEAN (no DB involved i.e Mongo),Grunt,Jasmine &RequireJS.
 
 Author
-Tabrez Akhlaue  
+Tabrez Akhlaque  
 
 
