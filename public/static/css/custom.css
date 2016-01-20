@@ -59,3 +59,13 @@ body {
   display: table-cell;
   border:1px solid #eee
 }
+.thumb {
+    margin-bottom: 30px;    
+}
+.thumb-img{
+   height: 236px !important;
+    width: 304px;
+}
+.topspace50{
+  padding-top:70px;
+}

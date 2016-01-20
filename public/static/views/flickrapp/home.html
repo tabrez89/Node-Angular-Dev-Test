@@ -1,23 +1,30 @@
-<div class="well" ng-controller="MainCtrl">
+<div class="row topspace50">
+  <div class="col-lg-3"></div>
+    <div class="col-lg-9">
   <form role="form" name="flickrform" ng-submit="searchonFlickr(flickrform.$invalid)" ngEnter="searchonFlickr(flickrform.$invalid)">
-    
+    <div class="row">
+      <div class="col-lg-10">
      <div class="form-group" show-errors>
                                                     <input class="form-control" type="text" name="tagvalue"  ng-model="inputModel.tagvalue" placeholder="Search tags comma seperated e.g bollywood, hollywood" required>
                                                  </div>
-    <button type="submit" class="btn btn-primary" ng-click="searchonFlickr(flickrform.$invalid)">Submit</button>
+                                               </div>
+                                                    <div class="col-lg-2">
+    <button type="submit" class="btn btn-primary" ng-click="searchonFlickr(flickrform.$invalid)"><i class="fa fa-search"></i>Search</button>
+  </div>
+  
   </form>
-  <div class="container">
-
+</div>
+<div class="col-lg-12"></div>
+  </div>
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Flickr</h1>
+               <hr>
             </div>
 
-            <div class="col-md-3" ng-repeat="flickrObject in flickrResponse">
-                <a class="thumbnail" href="{{flickrObject.media.b}}" target="_blank"> <!-- later on click popup to show big size image -->
-                    <img class="img-responsive" src="{{flickrObject.media.m}}" alt="">
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb" ng-repeat="flickrObject in flickrResponse">
+                <a class="thumbnail" href="{{flickrObject.media.m}}"  target="_blank"> <!-- later on click popup to show big size image -->
+                    <img class="img-responsive thumb-img" src="{{flickrObject.media.m}}" alt="">
                 </a>
             </div>
         </div>
-    </div>
-</div>
+

@@ -5,9 +5,9 @@
   "main": "views/static/index.html",
   "dependencies": {
     "chai": "^3.4.1",
+    "ejs": "~0.7.1",
     "express": "~3.2.6",
     "fs": "",
-    "ejs": "~0.7.1",
     "grunt": "*",
     "grunt-bower-installer": "*",
     "grunt-contrib-requirejs": "*",
@@ -15,13 +15,14 @@
     "jquery": "^2.x.x",
     "jquery.cookie": "^1.x.x",
     "path": "",
+    "request": "^2.67.0",
     "requirejs": "*",
-    "socket.io": "latest",
-    "time": "",
-    "url": "*",
     "scripts": {
       "test": "./node_modules/.bin/mocha --reporter spec"
-    }
+    },
+    "socket.io": "latest",
+    "time": "",
+    "url": "*"
   },
   "devDependencies": {
     "grunt-contrib-concat": "^0.5.1",

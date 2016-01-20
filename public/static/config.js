@@ -1,6 +1,6 @@
 requirejs.config({
   "paths":{
-        "angular": "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.2/angular",
+        "angular": "/bower_components/angular/angular.min",
         "uiRouter": "lib/ui-router/angular-ui-router.min",
         'ui-bootstrap':'lib/bootstrap/ui-bootstrap-tpls-0.11.0.min',
         'app-directive':'app/directive/flickrdirectives',

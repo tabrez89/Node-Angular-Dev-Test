@@ -19,7 +19,9 @@
 <body class="off" ng-controller="MainCtrl" id="flickr-body">
         <div ng-include="'static/views/common/header.html'"></div>
         <!-- Main view  -->
+        <div class="container">
         <div ui-view></div>
+    </div>
         <!-- Footer -->
         <div ng-include="'static/views/common/footer.html'"></div>
     
@@ -33,7 +35,7 @@
     <link type="text/css" rel="stylesheet" href="static/css/bload/bload.css" />
     <script src="static/js/utils/flickrutils.js"></script>
     <script src="static/js/plugins/noty/jquery.noty.packaged.min.js"></script>
-    <script data-main="static/config" src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.js"></script>
+    <script data-main="static/config" src="/bower_components/requirejs/require.js"></script>
     <!--To DO More dynamic unit testing-->
    <!--  <script src="static/lib/jasmine-2.4.1/jasmine.js"></script>
     <script src="static/lib/jasmine-2.4.1/jasmine-html.js"></script>
