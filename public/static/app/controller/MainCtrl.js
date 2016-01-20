@@ -22,7 +22,7 @@ define(['app/app'],function(app){
      });
 
 };
-   $scope.searchonFlickr(true);
+   $scope.searchonFlickr(false);
  }]);
 });
 
