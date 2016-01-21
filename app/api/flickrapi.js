@@ -53,7 +53,6 @@ var request = require('request'),
                 }
 
             });
-            //res.send(200,{ 'message': 'AlhumdolilAllah'});
 
         }
 
